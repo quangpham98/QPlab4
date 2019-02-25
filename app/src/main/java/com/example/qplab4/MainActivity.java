@@ -21,7 +21,7 @@ public class MainActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
-        final String [] colorList=getResources().getStringArray(R.array.Colors);
+        final String [] colors=getResources().getStringArray(R.array.Colors);
 
 
 
@@ -42,7 +42,7 @@ public class MainActivity extends AppCompatActivity {
                     return;
                 }
                 else {
-                    intent.putExtra("color", colors.get(position));
+                    intent.putExtra("color", colors[position]);
                     startActivity(intent);
                 }
             }
