@@ -1,3 +1,14 @@
 <resources>
     <string name="app_name">QPlab4</string>
+    <string-array name="Colors">
+        <item>Magneta</item>
+        <item>White</item>
+        <item>Green</item>
+        <item>Red</item>
+        <item>Blue</item>
+        <item>Yellow</item>
+        <item>Black</item>
+        <item>Gray</item>
+    </string-array>
+
 </resources>

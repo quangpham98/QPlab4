@@ -14,21 +14,15 @@ import java.util.ArrayList;
 
 public class MainActivity extends AppCompatActivity {
 
+
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
-        final ArrayList<String> colors = new ArrayList<>();
-        colors.add("Red");
-        colors.add("White");
-        colors.add("Blue");
-        colors.add("Green");
-        colors.add("Magenta");
-        colors.add("Purple");
-        colors.add("Yellow");
-        colors.add("Black");
-        colors.add("Cyan");
-        colors.add("TRANSPARENT");
+
+        final String [] colorList=getResources().getStringArray(R.array.Colors);
+
 
 
         final View layout = findViewById(R.id.layout);
