@@ -40,13 +40,17 @@ public class ColorAdapter extends BaseAdapter {
 
     @Override
     public View getView(int position, View convertView, ViewGroup parent) {
+
+        String [] colorlist={"MAGNETA","WHITE","GREEN","RED","BLUE","YELLOW","BLACK","GRAY"};
+
+
         TextView t = new TextView(this.ctx);
         t.setText( colors[position] );
         t.setGravity(Gravity.CENTER_HORIZONTAL);
         t.setTextSize(24);
         t.setPadding(10, 8, 10, 8);
         try {
-            t.setBackgroundColor(Color.parseColor( colors[position] ));
+            t.setBackgroundColor(Color.parseColor( colorlist[position] ));
         } catch( Exception e ) {
 
         }

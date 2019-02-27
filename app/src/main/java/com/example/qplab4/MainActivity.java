@@ -18,8 +18,12 @@ public class MainActivity extends AppCompatActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
+
+
+
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
+        final String [] colorlist={"MAGNETA","WHITE","GREEN","RED","BLUE","YELLOW","BLACK","GRAY"};
 
         final String [] colors=getResources().getStringArray(R.array.Colors);
 
@@ -42,7 +46,7 @@ public class MainActivity extends AppCompatActivity {
                     return;
                 }
                 else {
-                    intent.putExtra("color", colors[position]);
+                    intent.putExtra("color", colorlist[position]);
                     startActivity(intent);
                 }
             }
